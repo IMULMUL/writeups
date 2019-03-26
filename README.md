@@ -1,6 +1,6 @@
 # Writeups (´｡• ᵕ •｡`)
 
-My Writeups, mostly for CTFs and wargame. Some are bug bountys. Blog are for more formal post. 
+My Writeups, mostly for CTFs and wargame. Some are bug bountys. Blog are for more formal post.
 
 You can find corresponding CTF challnege in my repo [CTF-Challenges](https://github.com/Auxy233/CTF-Challenges). They might not keep up-to-date. (￣ω￣)
 
@@ -13,7 +13,20 @@ Inside [wargame folder](wargame):
 - alf.nu
 - ...
 
-# 2019
+# leetcode
+
+Inside folder [leetcode](leetcode), challenges for SDE.
+
+# CTF
+
+Security stuff
+
+## 2019
+
+[0CTF 2019](2019/2019-03-26-0CTF.md) | r3 |
+------| -----|
+if on a winter's night a traveler | pwn |
+baby sandbox | pwn |
 
 [Codegate 2019](2019/2019-01-27-codegate.md) | No Categories |
 --------| -----|
@@ -24,7 +37,7 @@ Inside [wargame folder](wargame):
 onewrite | pwn |
 echoechoecho | pwn |
 
-# 2018
+## 2018
 
 [35C3 CTF](2018/2018-12-27-35C3-CTF.md) | Last CTF of 2018 |
 ----| -------|
@@ -41,7 +54,7 @@ easysandbox | misc|
 [LCTF](2018/2018-11-18-LCTF-2018.md) | not in CTFtime |
 ----| -------|
 easy heap | pwn |
-pwn4fun | pwn | 
+pwn4fun | pwn |
 
 [SECCON CTF](2018/2018-10-28-SECCON-CTF-2018.md) | great gap in difficulty |
 ----| -------|
