@@ -23,101 +23,107 @@ Security stuff
 
 ## 2019
 
-[0CTF 2019](2019/2019-03-26-0CTF.md) | r3 |
-------| -----|
-if on a winter's night a traveler | pwn |
-baby sandbox | pwn |
+[* CTF](2019/2019-04-28-StarCTF.md)
+------|
+quicksort |
+uxpofcpp |
+babyshell |
 
-[Codegate 2019](2019/2019-01-27-codegate.md) | No Categories |
---------| -----|
-20000 | N/A |
+[0CTF 2019](2019/2019-03-26-0CTF.md)
+------|
+if on a winter's night a traveler | 
+baby sandbox |
 
-[Insomni'hack teaser 2019](2019/2019-01-20-inso-hack.md) | Server sucks |
----------| ----|
-onewrite | pwn |
-echoechoecho | pwn |
+[Codegate 2019](2019/2019-01-27-codegate.md) |
+--------| 
+20000 |
+
+[Insomni'hack teaser 2019](2019/2019-01-20-inso-hack.md) | 
+---------|
+onewrite | 
+echoechoecho | 
 
 ## 2018
 
-[35C3 CTF](2018/2018-12-27-35C3-CTF.md) | Last CTF of 2018 |
-----| -------|
-php| web |
-juggle | rev/actually web style rev |
-collection | pwn |
+[35C3 CTF](2018/2018-12-27-35C3-CTF.md) | 
+----| 
+php| 
+juggle | 
+collection | 
 
-[BCTF](2018/2018-11-28-BCTF-2018.md) | XD |
-----| -------|
-easiest | pwn |
-three | pwn |
-easysandbox | misc|
+[BCTF](2018/2018-11-28-BCTF-2018.md) | 
+----| 
+easiest |
+three | 
+easysandbox | 
 
-[LCTF](2018/2018-11-18-LCTF-2018.md) | not in CTFtime |
-----| -------|
-easy heap | pwn |
-pwn4fun | pwn |
+[LCTF](2018/2018-11-18-LCTF-2018.md) | 
+----| 
+easy heap | 
+pwn4fun |
 
-[SECCON CTF](2018/2018-10-28-SECCON-CTF-2018.md) | great gap in difficulty |
-----| -------|
-runme | rev |
-ghostkingdom | web |
-classic pwn | pwn |
-profile | pwn |
-kind vm | pwn |
+[SECCON CTF](2018/2018-10-28-SECCON-CTF-2018.md) | 
+----| 
+runme | 
+ghostkingdom | 
+classic pwn | 
+profile | 
+kind vm | 
 
-[HITCON CTF](2018/2018-10-22-HITCON-CTF-2018.md) | can't solve even baby chall |
-----| -------|
-children tcache | pwn |
-abyss | pwn |
-super hexagon | pwn |
-ev3 basic | pwn |
+[HITCON CTF](2018/2018-10-22-HITCON-CTF-2018.md) | 
+----| 
+children tcache | 
+abyss | 
+super hexagon | 
+ev3 basic | 
 
-[Hack.lu](2018/2018-10-18-hacklu-CTF-2018.md) | easy ~ medium |
-----| -------|
-baby php | web |
-baby reverse | rev |
-baby exploit | pwn |
-baby kernel | pwn |
-heap heaven 2 | pwn |
+[Hack.lu](2018/2018-10-18-hacklu-CTF-2018.md) | 
+----| 
+baby php | 
+baby reverse | 
+baby exploit |
+baby kernel | 
+heap heaven 2 |
 
-[DragonSector CTF](2018/2018-09-30-Dragonsector-CTF-2018.md) | hard chall with limited time |
-----| -------|
-production | pwn |
+[DragonSector CTF](2018/2018-09-30-Dragonsector-CTF-2018.md) |
+----|
+production |
 
-[CSAW](2018/2018-09-17-CSAW-CTF-2018.md) | longest CTF |
-----| -------|
-boi | pwn |
-get it | pwn |
-shell->code | pwn |
-double trouble |pwn |
+[CSAW](2018/2018-09-17-CSAW-CTF-2018.md) |
+----| 
+boi | 
+get it | 
+shell->code |
+double trouble |
 
-[TokyoWestern CTF](2018/2018-09-04-TW-CTF-2018.md) | missed CodeBlue and joined this |
-----| -------|
-pysandbox | web |
-shrine | web |
-simple auth | web |
-slack emoji convert | web |
-vim shell | misc |
-load | pwn |
-swap | pwn |
+[TokyoWestern CTF](2018/2018-09-04-TW-CTF-2018.md) | 
+----| 
+pysandbox |
+shrine | 
+simple auth | 
+slack emoji convert |
+vim shell | 
+load | 
+swap | 
 
-[RealWorld CTF](2018/2018-08-05-Realworld-CTF-2018.md) | Richest CTF |
-----| -------|
-advertisement | web |
-bookhub | web |
-dot free | web |
+[RealWorld CTF](2018/2018-08-05-Realworld-CTF-2018.md) |
+----| 
+advertisement |
+bookhub | 
+dot free | 
 
-[Meepwn CTF](2018/2018-07-17-Meepwn-CTF-2018.md) | :P |
-----| -------|
-grandline | web |
-omegasector | web |
-PyCalx | misc |
+[Meepwn CTF](2018/2018-07-17-Meepwn-CTF-2018.md) | 
+----| 
+grandline | 
+omegasector | 
+PyCalx | 
 
-[Google CTF](2018/2018-07-04-Google-CTF-2018.md) | Easier than 2017's |
-----| -------|
-js safe | web |
-cat chat | web |
-translate | web |
+[Google CTF](2018/2018-07-04-Google-CTF-2018.md) | 
+----|
+js safe | 
+cat chat | 
+translate | 
 
-[*CTF](2018/2018-05-05-StarCTF-2018.md) | (My first CTF! °˖✧◝(⁰▿⁰)◜✧˖°) |
-----| -------|
-simpleweb | web |
+[*CTF](2018/2018-05-05-StarCTF-2018.md) | 
+----| 
+simpleweb | 
