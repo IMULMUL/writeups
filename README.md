@@ -23,7 +23,15 @@ Security stuff
 
 ## 2019
 
-[* CTF](2019/2019-04-28-StarCTF.md)
+[DefCon Qual 2019](2019/2019-05-016-Defcon-Qual.md)
+------|
+run 2 |
+run 3 |
+run 10 |
+run 11 |
+babyheap |
+
+[* CTF 2019](2019/2019-04-28-StarCTF.md)
 ------|
 quicksort |
 uxpofcpp |
