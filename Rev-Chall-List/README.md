@@ -46,9 +46,7 @@ It will check input, if partially corrects, then outputs corresponding flag sect
 
 ## SPIM
 
-A challenge requiring us to simulate MIPS:
-```python
-```
+A challenge requiring us to simulate MIPS, it xor the provided string with corresponding index, simply xor to get result.
 
 ## Step
 
@@ -75,3 +73,14 @@ The comparison is straight forward, but we need to use online md5 cracker to get
 ## Serial
 
 This is a packed program. Use single step to find `cmp` step by step and get the key string...
+
+## SRM
+
+Leak flag through comparison.
+
+## Warmup
+
+Beautify the code and found that `l` is useless, delete it and get flag.
+
+# Easy
+

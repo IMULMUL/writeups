@@ -764,3 +764,12 @@ while True:
     p = subprocess.Popen([jumpto], executable="/home/tiny_easy/tiny_easy", env=myenv)
     p.wait()
 ```
+
+
+# loveletter
+
+The program will sanitize sensitive keyword to a longer character (e.g. from `{` to the love symbol). We can use this to extend input length and eventually overwrite data. Once overwrite data next to input array (which record the length of prolog), the beginning will turn from `echo I love ` to `e`. Then we can append `nv cat flag XXXXX....XXXX`, which eventually becomes `env cat flag XXXX...XXXX` and we can get flag.
+
+```python
+print("nv cat flag {" + "a" * (0x100 - 3- 12) + "\x01")
+```
