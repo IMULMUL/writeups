@@ -1,0 +1,130 @@
+* CodeFroce Problem Set A
+
+** 339A
+
+#+BEGIN_SRC ocaml
+let () =
+  let n = read_int () in
+  let rec loop num =
+    if num = 0
+    then
+      ()
+    else
+      let line = read_line () in
+      Scanf.sscanf line "%Ld %Ld %Ld" (fun a b c ->
+          let open Int64 in
+          let ls' = List.sort (fun a b -> compare a b) [a;b;c] in
+          let n1 = List.nth ls' 0 in
+          let n2 = List.nth ls' 1 in
+          let n3 = List.nth ls' 2 in
+          if (compare (add (add n2 n1) 1L) n3) >= 0 then Printf.printf "Yes\n" else Printf.printf "No\n"
+        )
+      ;
+      num - 1 |> loop
+  in
+  loop n
+;;
+#+END_SRC
+
+** 4A
+
+#+BEGIN_SRC ocaml
+let () =
+    let num = read_int() in
+    if num mod 2 = 0 && num > 2
+    then
+        Printf.printf "YES"
+    else
+        Printf.printf "NO"
+;;
+#+END_SRC
+
+** 1A
+
+#+BEGIN_SRC ocaml
+let () =
+  Scanf.scanf "%Lu %Lu %Lu" (fun m n a ->
+      let open Int64 in
+      let calc x = if 0L |> compare (rem x a) |> (=) 0 then div x a else add (div x a) 1L in
+      let height = calc n in
+      let weight = calc m in
+      Printf.printf "%Lu" (mul height weight)
+    )
+;;
+#+END_SRC
+
+** 7A
+
+#+BEGIN_SRC ocaml
+let rec read_lines n =
+  match n with
+  | 0 -> []
+  | _ -> (read_line ()) :: read_lines (n - 1)
+ 
+let () =
+  let num = read_int() in
+  read_lines num
+  |> List.rev
+  |> List.iter (fun str ->
+      let len = String.length str in
+      if len <= 10
+      then
+        Printf.printf "%s\n" str
+      else
+        Printf.printf "%c%d%c\n" str.[0] (len - 2) str.[len - 1]
+    )
+;;
+#+END_SRC
+
+
+** 282A
+
+#+BEGIN_SRC ocaml
+let rec read_lines n =
+  match n with
+  | 0 -> []
+  | _ -> let res = read_line () in
+    res :: read_lines (n - 1)
+ 
+let () =
+  let num = read_int() in
+  let res = read_lines num in
+  List.fold_left (fun num str ->
+    if String.contains str '-'
+    then
+      num - 1
+    else
+      num + 1
+    ) 0 res
+  |> Printf.printf "%d"
+;;
+#+END_SRC 
+
+** 236A
+
+#+BEGIN_SRC ocaml
+let rec read_lines n =
+  match n with
+  | 0 -> []
+  | _ -> let res = read_line () in
+    res :: read_lines (n - 1)
+ 
+let () =
+  let line = read_line () in
+  let module CSet = Set.Make (Char) in
+  let rec loop num set =
+    if num = String.length line
+    then
+      set
+    else
+      loop (num + 1) (CSet.add line.[num] set)
+  in
+  let num = loop 0 CSet.empty
+            |> CSet.cardinal in
+  if num mod 2 = 0
+  then
+    Printf.printf "CHAT WITH HER!\n"
+  else
+    Printf.printf "IGNORE HIM!\n"
+;;
+#+END_SRC
