@@ -1,0 +1,47 @@
+* CodeWar 5kyu Challenge Solutions
+
+** Directions Reduction
+
+A basic reduction with convergence testing to determine further recursion:
+
+#+BEGIN_SRC ocaml
+let rec reduceDir (ls: string list): string list = 
+  let rec help ls =
+    match ls with
+    | [] -> []
+    | "NORTH" :: "SOUTH" :: tl 
+    | "SOUTH" :: "NORTH" :: tl 
+    | "WEST" :: "EAST" :: tl
+    | "EAST" :: "WEST" :: tl
+    -> help tl
+    | hd :: tl -> hd :: help tl
+  in
+  let res1 = help ls in
+  let res2 = help res1 in
+  if List.length res1 = List.length res2
+  then
+    res2
+  else
+    reduceDir res2
+#+END_SRC
+
+** Product of consecutive Fib numbers
+
+Trivial:
+
+#+BEGIN_SRC ocaml
+let product_fib (prod: int): int * int * int =
+  let rec fib n1 n2 = 
+    let res = n1 * n2 in
+    if res > prod
+    then
+      (n1, n2, 0)
+    else if res = prod
+    then
+      (n1, n2, 1)
+    else
+      fib n2 (n1 + n2)
+  in 
+  fib 0 1
+;;
+#+END_SRC
