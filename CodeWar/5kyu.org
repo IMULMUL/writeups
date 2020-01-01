@@ -45,3 +45,35 @@ let product_fib (prod: int): int * int * int =
   fib 0 1
 ;;
 #+END_SRC
+
+** Integers: Recreation One
+
+It could be shorter:
+
+#+BEGIN_SRC ocaml
+let list_squared (m: int) (n: int): string =
+  (* your code *)
+  let satisfy n' =
+    let sum = ref 0 in
+    let sqrti num = float_of_int num |> sqrt |> int_of_float in
+    for i = 1 to n' do
+      if n' mod i = 0
+      then
+          sum := !sum + i * i
+    done;
+    let r1 = sqrti !sum in
+    let r2 = float_of_int !sum |> sqrt in
+    if (float_of_int r1) <> r2 then -1 else !sum
+  in    
+  List.init (n - m) (fun i -> 
+      let n = i + m in
+      let res = satisfy n in
+      if res <> -1 then
+        "(" ^ string_of_int n ^ ", " ^ string_of_int res ^ ")"
+      else
+        ""
+  )
+  |> List.filter (fun s -> s <> "")
+  |> String.concat "; "
+;;
+#+END_SRC
